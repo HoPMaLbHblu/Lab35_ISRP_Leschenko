@@ -6,8 +6,8 @@ public static class MemesStore {
     public static List<Meme> Memes { get; } = new() {
         new Meme {
             Id  = 1,
-            Title = "Когд код зарабоатл с первого раза",
-            Category = "Программирования",
+            Title = "Когда код заработал с первого раза",
+            Category = "Программирование",
             Rating = 5,
             AddedAt = new DateTime(2026,1,1,0,0,0, DateTimeKind.Utc)},
         new Meme {
@@ -19,7 +19,7 @@ public static class MemesStore {
         new Meme {
             Id  = 3,
             Title = "Пятница после пар",
-            Category = "жизнь",
+            Category = "Жизнь",
             Rating = 5,
             AddedAt = new DateTime(2026,1,3,0,0,0, DateTimeKind.Utc)},
     };

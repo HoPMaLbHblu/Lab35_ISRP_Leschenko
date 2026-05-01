@@ -23,10 +23,10 @@ public class MemesController : ControllerBase {
     [HttpPost]
     public ActionResult<Meme> Create([FromBody] Meme meme) {
         if (string.IsNullOrWhiteSpace(meme.Title)) {
-            return BadRequest(new { message = "Напзвание мема не может быть пустым " });
+            return BadRequest(new { message = "Название мема не может быть пустым " });
         }
         if (meme.Rating < 1 || meme.Rating > 5) {
-            return BadRequest(new { message = "Рейтинг должен юыть от 1 до 5" });
+            return BadRequest(new { message = "Рейтинг должен быть от 1 до 5" });
         }
         meme.Id = MemesStore.NexId();
         meme.AddedAt = DateTime.UtcNow;
