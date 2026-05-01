@@ -9,6 +9,7 @@ const Count = document.getElementById("memesCount")
 
 function renderMemes(memes) {
     loadingText.style.display = "none";
+    Count.textContent = `Всего мемов: ${memes.length}`;
     if (memes.length === 0) {
         memesGrid.innerHTML = '<p class="empty-text">Мемов пока нет. Добавьте первый!</p>';
         return;
